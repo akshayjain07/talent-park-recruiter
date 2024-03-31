@@ -21,7 +21,7 @@ const Button = ({ btnTitle, backgroundColor, borderColor, onClick }) => (
   </motion.div>
 );
   
-  const Buttons3 = ({ onButtonClick }) => { // Receive onButtonClick prop
+const Buttons3 = ({ onButtonClick }) => { // Receive onButtonClick prop
     const handleButtonClick = (btnTitle) => {
       // Lift btnTitle up to the parent component
       console.log(`Button "${btnTitle}" clicked!`);
@@ -29,11 +29,14 @@ const Button = ({ btnTitle, backgroundColor, borderColor, onClick }) => (
   };
 
   return (
+    <>
     <div className="flex flex-wrap justify-center gap-4 p-5">
       {btns.map((btn, index) => (
-        <Button key={btn.btnTitle} onClick={handleButtonClick} {...btn} />
+        <Button key={btn.btnTitle} {...btn} />
+        // <Button key={btn.btnTitle} onClick={handleButtonClick} {...btn} />
       ))}
     </div>
+    </>
   );
 };
 
