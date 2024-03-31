@@ -31,7 +31,7 @@ const Buttons3 = ({ onButtonClick }) => { // Receive onButtonClick prop
 
   return (
     <>
-    <div className="flex flex-wrap justify-center gap-4 p-5">
+    <div className="flex flex-wrap justify-center gap-4">
       {btns.map((btn, index) => (
         <Button key={btn.btnTitle} {...btn} />
         // <Button key={btn.btnTitle} onClick={handleButtonClick} {...btn} />
@@ -41,5 +41,4 @@ const Buttons3 = ({ onButtonClick }) => { // Receive onButtonClick prop
   );
 };
 
-// export default SectionWrapper(Buttons3,'button3')
-export default Buttons3;
+export default SectionWrapper(Buttons3,'button3');

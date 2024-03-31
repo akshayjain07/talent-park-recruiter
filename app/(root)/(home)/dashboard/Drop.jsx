@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from 'react'
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 import Buttons3 from './Buttons3';
@@ -64,11 +66,8 @@ const Drop = () => {
     </div>
 
     <div className="flex flex-wrap justify-center p-5 text-3xl font-semibold ">Interviewed {selectedItem} </div>
-              <br />
-      <div>
-        {/* <Buttons2/> */}
-        <Buttons3/>
-      </div>
+
+    <Buttons3/>
     </>
   )
 }
