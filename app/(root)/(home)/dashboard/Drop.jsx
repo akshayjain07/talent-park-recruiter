@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState } from 'react'
-import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
 import Buttons3 from './Buttons3';
 
 const Drop = () => {
@@ -22,13 +21,6 @@ const Drop = () => {
     
     const [isOpen, setIsOpen] = useState(false); // State to manage dropdown visibility
     const [selectedItem, setSelectedItem] = useState('Today'); // State to manage selected item
-
-
-    const DropDown = () => (
-        <div className="w-28 border-1 border-color px-2 py-1 rounded-md">
-        <DropDownListComponent id="time" fields={{ text: 'Time', value: 'Id' }} style={{ border: 'none', color: 'white' }} value="1" dataSource={dropdownData} popupHeight="220px" popupWidth="120px" />
-        </div>
-    );
 
   return (
     <>
