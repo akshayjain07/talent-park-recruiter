@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { btns } from '../../../../constants';
+import { SectionWrapper } from './hoc';
 
 const Button = ({ btnTitle, backgroundColor, borderColor, onClick }) => (
   <motion.div
@@ -40,4 +41,5 @@ const Buttons3 = ({ onButtonClick }) => { // Receive onButtonClick prop
   );
 };
 
+// export default SectionWrapper(Buttons3,'button3')
 export default Buttons3;

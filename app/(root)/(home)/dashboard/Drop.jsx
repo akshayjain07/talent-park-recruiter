@@ -45,7 +45,7 @@ const Drop = () => {
       </button>
       {/* Dropdown content */}
       {isOpen && (
-        <div className="absolute top-full z-10 border-2 bg-black shadow-md mt-1 py-1 w-28 bg-white">
+        <div className="absolute top-full z-10 border-2 bg-black shadow-md mt-1 py-1 w-28 ">
           {dropdownData.map((item) => (
             <div
               key={item.Id}
@@ -64,7 +64,7 @@ const Drop = () => {
     </div>
 
     <div className="flex flex-wrap justify-center p-5 text-3xl font-semibold ">Interviewed {selectedItem} </div>
-
+              <br />
       <div>
         {/* <Buttons2/> */}
         <Buttons3/>

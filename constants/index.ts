@@ -21,6 +21,11 @@ export const sidebarLinks = [
     label: 'Recordings',
   },
   {
+    imgURL: '/icons/join-meeting.svg',
+    route: '/resumescanats',
+    label: 'ResumeScanATS',
+  },
+  {
     imgURL: '/icons/copy.svg',
     // imgURL: '/icons/hamburger.svg',
     route: '/dashboard',
