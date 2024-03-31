@@ -18,6 +18,7 @@
 import { ReactNode } from 'react';
 import { ContextProvider } from './contexts/ContextProvider';
 import DashBoard from './page';
+// import './index.css';
 
 // import StreamVideoProvider from '@/providers/StreamClientProvider';
 
